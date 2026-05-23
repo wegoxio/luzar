@@ -38,13 +38,13 @@ export function ProductsSection() {
         src="/products/products-bg.webp"
         alt="Campo de cosecha de granos"
         fill
-        className="object-cover object-center"
+        className="object-cover object-[center_36%]"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#d8cfb7]/40 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#d8cfb7]/28 via-transparent to-transparent" />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1501px] px-4 pb-24 pt-10 sm:px-8 lg:px-12">
-        <div className="overflow-hidden border border-white/55 bg-transparent">
-          <Reveal className="bg-gradient-to-b from-[#8290a0]/72 via-[#8f9bab]/58 to-[#b4bcc8]/50 px-6 pb-14 pt-20 text-center sm:px-10">
+      <div className="relative z-10 mx-auto w-full max-w-[1501px] px-4 pb-24 pt-6 sm:px-8 lg:px-12">
+        <div className="overflow-hidden bg-transparent">
+          <Reveal className="bg-[linear-gradient(180deg,rgba(79,104,132,0.78)_0%,rgba(131,149,169,0.58)_52%,rgba(173,184,197,0.47)_100%)] px-6 pb-16 pt-20 text-center sm:px-10">
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.33em] text-white/92">
               NUESTRO PORTAFOLIO
             </p>
@@ -56,7 +56,7 @@ export function ProductsSection() {
             </p>
           </Reveal>
 
-          <div className="-mt-4 grid grid-cols-1 sm:grid-cols-2 lg:mt-0 lg:grid-cols-4">
+          <div className="grid grid-cols-1 border-y border-[#D1D6DF] bg-white divide-y divide-[#D1D6DF] sm:grid-cols-2 sm:divide-y-0 sm:[&>*:nth-child(odd)]:border-r sm:[&>*:nth-child(odd)]:border-[#D1D6DF] lg:grid-cols-4 lg:[&>*:nth-child(odd)]:border-r-0 lg:divide-x">
             {PRODUCTS.map((product, index) => (
               <Reveal key={product.title} delayMs={90 * index}>
                 <ProductCard

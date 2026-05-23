@@ -6,22 +6,26 @@ const SERVICES = [
   {
     icon: Globe,
     title: "Originacion",
+    imageSrc: "/services/originacion.png",
     description:
       "Identificacion y negociacion directa con productores en mercados estrategicos.",
   },
   {
     icon: Truck,
     title: "Logistica",
+    imageSrc: "/services/logistica.png",
     description: "Gestion integral de transporte maritimo y terrestre con flota propia.",
   },
   {
     icon: ArrowUpRight,
     title: "Comercializacion",
+    imageSrc: "/services/comercializacion.png",
     description: "Estrategias de mercado optimizadas para maximizar valor.",
   },
   {
     icon: ShieldCheck,
     title: "Gestion de riesgos",
+    imageSrc: "/services/gestion.png",
     description: "Cobertura financiera y operacional para garantizar estabilidad.",
   },
 ];
@@ -52,6 +56,7 @@ export function ServicesSection() {
                 <ServiceCard
                   icon={service.icon}
                   title={service.title}
+                  imageSrc={service.imageSrc}
                   description={service.description}
                 />
               </Reveal>

@@ -15,19 +15,19 @@ const HERO_SLIDES = [
       "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
   },
   {
-    image: "/hero/hero-1.webp",
+    image: "/hero/hero-2.webp",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
       "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
   },
   {
-    image: "/hero/hero-1.webp",
+    image: "/hero/hero-3.webp",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
       "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
   },
   {
-    image: "/hero/hero-1.webp",
+    image: "/hero/hero-4.webp",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
       "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
@@ -73,21 +73,29 @@ export function HeroSection() {
   return (
     <section
       id="nosotros"
-      className="relative h-[808px] scroll-mt-28 overflow-hidden border border-[#1f98df] bg-slate-900"
+      className="relative h-dvh scroll-mt-28 overflow-hidden border border-[#1f98df] bg-slate-900"
     >
-      <Image
-        src={currentSlide.image}
-        alt="Vista logistica de contenedores en puerto"
-        fill
-        priority
-        className="object-cover object-center brightness-[1.03] contrast-[1.04]"
-      />
+      <div className="absolute inset-0">
+        {HERO_SLIDES.map((slide, index) => (
+          <Image
+            key={slide.image}
+            src={slide.image}
+            alt="Vista logistica de contenedores en puerto"
+            fill
+            priority={index === 0}
+            sizes="100vw"
+            className={`pointer-events-none object-cover object-center brightness-[1.03] contrast-[1.04] transition-opacity duration-700 ease-in-out will-change-opacity ${
+              index === activeSlide ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+      </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#06142f]/58 via-[#0d1e3d]/22 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#031026]/32 via-transparent to-[#0d2446]/14" />
+      <div className="absolute inset-0 bg-linear-to-r from-[#06142f]/58 via-[#0d1e3d]/22 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-[#031026]/32 via-transparent to-[#0d2446]/14" />
 
       <div className="relative z-10 flex h-full flex-col px-7 pb-6 pt-24 sm:px-10 sm:pt-28 lg:px-12 lg:pt-32">
-        <Reveal className="my-auto max-w-[808px] pb-16 lg:pb-20" delayMs={80}>
+        <Reveal className="my-auto max-w-202 pb-16 lg:pb-20" delayMs={80}>
           <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[clamp(3.1rem,6.25vw,5.625rem)] tracking-[-0.01em] text-white">
             {currentSlide.title.map((line) => (
               <span key={line} className="block">
@@ -96,7 +104,7 @@ export function HeroSection() {
             ))}
           </h1>
 
-          <p className="mt-6 max-w-[808px] text-[clamp(1.1rem,1.45vw,1.5rem)] leading-[1.35] text-white/90">
+          <p className="mt-6 max-w-202 text-[clamp(1.1rem,1.45vw,1.5rem)] leading-[1.35] text-white/90">
             {currentSlide.description}
           </p>
         </Reveal>

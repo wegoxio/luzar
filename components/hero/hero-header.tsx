@@ -14,7 +14,8 @@ export function HeroHeader({ menuItems }: HeroHeaderProps) {
         <Image
           src="/logo-luzar.png"
           alt="Luzar"
-          fill
+          width={124}
+          height={42}
           priority
           className="object-contain object-left"
         />
