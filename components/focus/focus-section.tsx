@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Reveal } from "../ui/reveal";
 
 const FOCUS_CONTENT = {
-  image: "/about/about-1.webp",
+  image: "/focus/focus-01.png",
   eyebrow: "NUESTRO ENFOQUE",
   title: "Que hacemos",
   text: "Agregamos valor en cada eslabon de la cadena de suministro, desde la originacion en mercados clave hasta la entrega final en destinos estrategicos. Nuestro enfoque integral abarca logistica internacional, gestion de riesgos y comercializacion de productos agricolas de alta calidad. Operamos con precision y compromiso para garantizar el flujo eficiente de materias primas a nivel global.",
