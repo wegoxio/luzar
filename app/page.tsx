@@ -22,7 +22,7 @@ export default function Home() {
         <LogisticsSection />
         <PresenceSection />
         <SustainabilitySection />
-        <ContactFooterSection />
+        <ContactFooterSection/>
       </main>
     </>
   );

@@ -8,15 +8,24 @@ const PRODUCT_LINKS = ["Maiz", "Soya", "Trigo", "Aceites"];
 export function ContactFooterSection() {
   return (
     <section id="contacto" className="scroll-mt-28 bg-black">
-      <div className="bg-[radial-gradient(80%_120%_at_50%_20%,#0f2b56_0%,#071129_58%,#020915_100%)]">
-        <Reveal className="mx-auto w-full max-w-[1501px] px-4 py-20 text-center sm:px-8 lg:px-12 lg:py-24">
-          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.34em] text-white/62">
+      <div className="relative overflow-hidden">
+        <Image
+          src="/contact/contact-01.png"
+          alt="Cultivo de maiz"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(90%_110%_at_50%_22%,rgba(22,53,85,0.32)_0%,rgba(6,18,35,0.52)_58%,rgba(3,10,20,0.72)_100%)]" />
+
+        <Reveal className="relative z-10 mx-auto w-full max-w-[1501px] px-4 py-20 text-center sm:px-8 lg:px-12 lg:py-24">
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.34em] text-white/72">
             CONTACTANOS
           </p>
           <h2 className="mt-5 text-[clamp(2.5rem,4.1vw,4.2rem)] font-light leading-[1.04] tracking-[-0.01em] text-white">
             Hablemos
           </h2>
-          <p className="mx-auto mt-8 max-w-[900px] text-[clamp(1rem,1.08vw,1.2rem)] leading-[1.6] text-white/66">
+          <p className="mx-auto mt-8 max-w-[900px] text-[clamp(1rem,1.08vw,1.2rem)] leading-[1.6] text-white/78">
             Estamos listos para ayudarte a optimizar tu cadena de suministro de
             materias primas
           </p>

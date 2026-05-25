@@ -9,7 +9,7 @@ export function LogisticsSection() {
       className="relative scroll-mt-28 overflow-hidden bg-[#0B4F8C]"
     >
       <Image
-        src="/hero/hero-1.webp"
+        src="/hero/hero-3.webp"
         alt="Infraestructura logistica portuaria"
         fill
         className="object-cover object-center"

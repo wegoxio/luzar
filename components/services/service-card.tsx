@@ -28,9 +28,9 @@ export function ServiceCard({ icon: Icon, title, imageSrc, description }: Servic
       <div className="relative min-h-[312px] transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus-visible:[transform:rotateY(180deg)] motion-reduce:transition-none motion-reduce:group-hover:[transform:none] motion-reduce:group-focus-visible:[transform:none]">
         <div
           style={faceStyle}
-          className="absolute inset-0 border border-[#E3E8F0] bg-white/72 px-8 py-8"
+          className="absolute inset-0 border border-[#E3E8F0] bg-white/72 px-8 py-8 text-center sm:text-left"
         >
-          <div className="inline-flex h-12 w-12 items-center justify-center bg-[linear-gradient(45.01deg,#00558F_0.01%,#012C64_99.99%)]">
+          <div className="mx-auto inline-flex h-12 w-12 items-center justify-center bg-[linear-gradient(45.01deg,#00558F_0.01%,#012C64_99.99%)] sm:mx-0">
             <Icon className="h-5.5 w-5.5 text-white" strokeWidth={1.85} />
           </div>
 
@@ -38,7 +38,7 @@ export function ServiceCard({ icon: Icon, title, imageSrc, description }: Servic
             {title}
           </h3>
 
-          <p className="mt-4 max-w-[300px] text-[clamp(0.95rem,0.92vw,1.02rem)] leading-[1.7] text-[#687387]">
+          <p className="mx-auto mt-4 max-w-[300px] text-[clamp(0.95rem,0.92vw,1.02rem)] leading-[1.7] text-[#687387] sm:mx-0">
             {description}
           </p>
         </div>
@@ -58,8 +58,8 @@ export function ServiceCard({ icon: Icon, title, imageSrc, description }: Servic
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/26 to-black/20" />
           <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(5,20,46,0.62)_0%,rgba(5,20,46,0.22)_42%,rgba(5,20,46,0.56)_100%)]" />
 
-          <div className="relative z-10 px-8 py-8 text-white">
-            <div className="inline-flex h-12 w-12 items-center justify-center border border-white/55 bg-white/10 backdrop-blur-[2px]">
+          <div className="relative z-10 px-8 py-8 text-center text-white sm:text-left">
+            <div className="mx-auto inline-flex h-12 w-12 items-center justify-center border border-white/55 bg-white/10 backdrop-blur-[2px] sm:mx-0">
               <Icon className="h-5.5 w-5.5 text-white" strokeWidth={1.85} />
             </div>
 
@@ -67,7 +67,7 @@ export function ServiceCard({ icon: Icon, title, imageSrc, description }: Servic
               {title}
             </h3>
 
-            <p className="mt-4 max-w-[300px] text-[clamp(0.95rem,0.92vw,1.02rem)] leading-[1.7] text-white/86">
+            <p className="mx-auto mt-4 max-w-[300px] text-[clamp(0.95rem,0.92vw,1.02rem)] leading-[1.7] text-white/86 sm:mx-0">
               {description}
             </p>
           </div>
