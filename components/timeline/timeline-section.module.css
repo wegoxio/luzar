@@ -1,0 +1,36 @@
+.viewport {
+  --gap: 14px;
+  --card-width: min(31vw, 472px);
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: var(--gap);
+}
+
+.item {
+  display: flex;
+  flex: 0 0 calc(var(--card-width) + var(--card-width) + var(--gap));
+  gap: var(--gap);
+}
+
+.card {
+  flex: 0 0 var(--card-width);
+}
+
+@media (max-width: 767px) {
+  .viewport {
+    --card-width: calc(100vw - 48px);
+  }
+
+  .item {
+    flex-basis: var(--card-width);
+    flex-direction: column;
+  }
+
+  .card {
+    width: var(--card-width);
+    flex: 0 0 auto;
+  }
+}

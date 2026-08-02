@@ -70,7 +70,7 @@ export function ProductsSection() {
 
           <Reveal
             delayMs={120}
-            className="bg-[linear-gradient(45.01deg,#0C1F43_0.01%,#102F60_99.99%)] px-5 py-12 text-center"
+            className="bg-[linear-gradient(45.01deg,#00558F_0.01%,#012C64_99.99%)] px-5 py-12 text-center"
           >
             <p className="text-[0.64rem] font-semibold uppercase tracking-[0.34em] text-white/78">
               ORIGENES

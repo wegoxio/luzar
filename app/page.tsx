@@ -6,8 +6,8 @@ import { SiteHeader } from "@/components/navigation/site-header";
 import { PresenceSection } from "@/components/presence/presence-section";
 import { ProductsSection } from "@/components/products/products-section";
 import { ServicesSection } from "@/components/services/services-section";
-import { StatsSection } from "@/components/stats/stats-section";
 import { SustainabilitySection } from "@/components/sustainability/sustainability-section";
+import { TimelineSection } from "@/components/timeline/timeline-section";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <SiteHeader />
       <main className="overflow-x-hidden">
         <HeroSection />
-        <StatsSection />
+        <TimelineSection />
         <FocusSection />
         <ServicesSection />
         <ProductsSection />
