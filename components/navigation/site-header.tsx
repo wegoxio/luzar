@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { label: "PRODUCTOS", href: "#productos" },
   { label: "LOGISTICA", href: "#logistica" },
   { label: "PRESENCIA", href: "#presencia" },
+  { label: "CONTACTO", href: "#contacto" },
 ];
 
 export function SiteHeader() {

@@ -41,26 +41,13 @@ export function FocusSection() {
 
           <h2 className="mt-9 text-[clamp(2.75rem,4vw,4rem)] font-light leading-none tracking-[-0.035em]">
             {FOCUS_CONTENT.title}
+            <br/>
           </h2>
+            <p className="text-lg font-bold mt-3">Agregamos valor en cada eslabón de la cadena de suministro</p>
 
-          <div className="mt-14 max-w-[650px] text-[clamp(1rem,1.35vw,1.25rem)] font-light leading-[2.05] text-[#667184] lg:mt-16">
+          <div className="max-w-[650px] text-[clamp(1rem,1.35vw,1.25rem)] font-light leading-[2.05] text-[#667184] mt-8">
             <p>
-              Agregamos valor en cada eslabón de la cadena de suministro, desde la{" "}
-              <strong className="font-semibold text-[#101a2e]">originación</strong> en
-              mercados clave hasta la{" "}
-              <strong className="font-semibold text-[#101a2e]">entrega final</strong> en
-              destinos estratégicos.
-            </p>
-            <p>
-              Nuestro enfoque integral abarca{" "}
-              <strong className="font-semibold text-[#101a2e]">
-                logística internacional, gestión de riesgos y comercialización
-              </strong>{" "}
-              de productos agrícolas de alta calidad.
-            </p>
-            <p>
-              Operamos con precisión y compromiso para garantizar el flujo eficiente de
-              materias primas a nivel global.
+              Brindamos servicios de asesoría y ejecución en las áreas de originación, logística, comercialización y gestión de riesgos. Generamos operaciones integrales, competitivas y flexibles para ayudar a clientes y socios comerciales a optimizar sus procesos de compra y venta, con el fin de lograr sus objetivos de crecimiento.
             </p>
           </div>
         </Reveal>
