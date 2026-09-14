@@ -12,17 +12,17 @@ const OFFICES = [
   },
   {
     flag: "\ud83c\uddf5\ud83c\udde6",
-    country: "Panama",
+    country: "Panamá",
     lines: [
-      "Ciudad de Panama, Panama",
+      "Ciudad de Panamá, Panamá",
       "Banco PH Plaza Credicorp",
-      "Oficina 801-4 piso 8 Centro Ciudad",
+      "Oficina 801-4, piso 8, Centro Ciudad",
     ],
   },
   {
     flag: "\ud83c\udde8\ud83c\uddf4",
     country: "Colombia",
-    lines: ["Bogota, Colombia", "Carrera 16 # 93-78", "Torre Seki", "Of 504"],
+    lines: ["Bogotá, Colombia", "Carrera 16 # 93-78", "Torre Seki", "Of. 504"],
   },
 ];
 
@@ -51,7 +51,7 @@ export function PresenceSection() {
           </h2>
           <p className="mx-auto mt-7 max-w-[860px] text-[clamp(0.98rem,1.03vw,1.12rem)] leading-[1.6] text-[#9099A9]">
             Actualmente nuestros destinos principales son Venezuela, Colombia,
-            Ecuador y Panama
+            Ecuador y Panamá
           </p>
         </Reveal>
 

@@ -5,8 +5,8 @@ import { StatCard } from "./stat-card";
 import { Reveal } from "../ui/reveal";
 
 const STATS = [
-  { value: 4, label: "DESTINOS DE AMERICA" },
-  { value: 5, label: "ORIGENES" },
+  { value: 4, label: "DESTINOS DE AMÉRICA" },
+  { value: 5, label: "ORÍGENES" },
   { value: 20, label: "IMPORTACIONES AL AÑO", prefix: "+" },
   { value: 1, label: "TM", prefix: "+", suffix: "M" },
 ];

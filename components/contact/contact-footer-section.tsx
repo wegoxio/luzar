@@ -2,8 +2,8 @@ import Image from "next/image";
 import { Mail } from "lucide-react";
 import { Reveal } from "../ui/reveal";
 
-const COMPANY_LINKS = ["Nosotros", "Que hacemos", "Servicios"];
-const PRODUCT_LINKS = ["Maiz", "Soya", "Trigo", "Aceites"];
+const COMPANY_LINKS = ["Nosotros", "Qué hacemos", "Servicios"];
+const PRODUCT_LINKS = ["Maíz", "Soya", "Trigo", "Aceites"];
 
 export function ContactFooterSection() {
   return (
@@ -11,7 +11,7 @@ export function ContactFooterSection() {
       <div className="relative overflow-hidden">
         <Image
           src="/contact/contact-01.png"
-          alt="Cultivo de maiz"
+          alt="Cultivo de maíz"
           fill
           sizes="100vw"
           className="object-cover object-center"
@@ -20,7 +20,7 @@ export function ContactFooterSection() {
 
         <Reveal className="relative z-10 mx-auto w-full max-w-[1501px] px-4 py-20 text-center sm:px-8 lg:px-12 lg:py-24">
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.34em] text-white/72">
-            CONTACTANOS
+            CONTÁCTANOS
           </p>
           <h2 className="mt-5 text-[clamp(2.5rem,4.1vw,4.2rem)] font-light leading-[1.04] tracking-[-0.01em] text-white">
             Hablemos
@@ -115,7 +115,7 @@ export function ContactFooterSection() {
                   Privacidad
                 </a>
                 <a href="#" className="transition-colors hover:text-white/60">
-                  Terminos
+                  Términos
                 </a>
               </div>
             </div>

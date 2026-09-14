@@ -50,7 +50,7 @@ export function SustainabilitySection() {
               </p>
 
               <p className="mt-7 font-normal text-[#172238]">
-                Hoy en día seguimos <strong className="font-bold">4 ejes claves...</strong>
+                Hoy en día seguimos <strong className="font-bold">4 ejes clave...</strong>
               </p>
             </div>
           </div>

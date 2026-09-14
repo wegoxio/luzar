@@ -5,26 +5,26 @@ import { Reveal } from "../ui/reveal";
 const SERVICES = [
   {
     icon: Globe,
-    title: "Originacion",
+    title: "Originación",
     imageSrc: "/services/originacion.png",
     description:
-      "Identificacion y negociacion directa con productores en mercados estrategicos.",
+      "Identificación y negociación directa con productores en mercados estratégicos.",
   },
   {
     icon: Truck,
-    title: "Logistica",
+    title: "Logística",
     imageSrc: "/services/logistica.png",
-    description: "Gestion integral de transporte maritimo y terrestre con flota propia.",
+    description: "Gestión integral de transporte marítimo y terrestre con flota propia.",
   },
   {
     icon: ArrowUpRight,
-    title: "Comercializacion",
+    title: "Comercialización",
     imageSrc: "/services/comercializacion.png",
     description: "Estrategias de mercado optimizadas para maximizar valor.",
   },
   {
     icon: ShieldCheck,
-    title: "Gestion de riesgos",
+    title: "Gestión de riesgos",
     imageSrc: "/services/gestion.png",
     description: "Cobertura financiera y operacional para garantizar estabilidad.",
   },

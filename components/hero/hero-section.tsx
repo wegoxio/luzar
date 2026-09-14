@@ -12,25 +12,25 @@ const HERO_SLIDES = [
     image: "/hero/hero-1.webp",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
-      "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
+      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
   },
   {
     image: "/hero/hero-2.webp",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
-      "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
+      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
   },
   {
     image: "/hero/hero-3.webp",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
-      "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
+      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
   },
   {
     image: "/hero/hero-4.webp",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
-      "Somos un comerciante global de materias primas, enfocados en productos para alimentacion animal y consumo humano.",
+      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
   },
 ];
 
@@ -80,7 +80,7 @@ export function HeroSection() {
           <Image
             key={slide.image}
             src={slide.image}
-            alt="Vista logistica de contenedores en puerto"
+            alt="Vista logística de contenedores en puerto"
             fill
             priority={index === 0}
             sizes="100vw"

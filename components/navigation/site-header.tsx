@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 
 const NAV_ITEMS = [
   { label: "NOSOTROS", href: "#nosotros" },
-  { label: "QUE HACEMOS", href: "#que-hacemos" },
+  { label: "QUÉ HACEMOS", href: "#que-hacemos" },
   { label: "SERVICIOS", href: "#servicios" },
   { label: "PRODUCTOS", href: "#productos" },
-  { label: "LOGISTICA", href: "#logistica" },
+  { label: "LOGÍSTICA", href: "#logistica" },
   { label: "PRESENCIA", href: "#presencia" },
   { label: "CONTACTO", href: "#contacto" },
 ];
@@ -148,7 +148,7 @@ export function SiteHeader() {
             <button
               type="button"
               className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/30 bg-white/8 text-white transition-colors hover:bg-white/14 lg:hidden"
-              aria-label="Abrir menu"
+              aria-label="Abrir menú"
               onClick={() => setMobileMenuOpen((prevValue) => !prevValue)}
             >
               {mobileMenuOpen ? (
@@ -206,7 +206,7 @@ export function SiteHeader() {
       {mobileMenuOpen ? (
         <button
           type="button"
-          aria-label="Cerrar menu"
+          aria-label="Cerrar menú"
           className="fixed inset-0 z-[70] bg-[#020b1d]/45 backdrop-blur-[1px] lg:hidden"
           onClick={() => setMobileMenuOpen(false)}
         />

@@ -9,14 +9,13 @@ export function LogisticsSection() {
       className="relative min-h-[760px] scroll-mt-28 overflow-hidden bg-[#172538] sm:min-h-[820px]"
     >
       <Image
-        src="/logistic/logistic-01.png"
+        src="/logistic/logistic-02.png"
         alt="Terminal marítima y puerto de contenedores"
         fill
         sizes="100vw"
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(24,38,56,0.96)_0%,rgba(21,32,47,0.89)_45%,rgba(7,16,28,0.87)_100%)]" />
-      <div className="absolute inset-0 bg-[#06172a]/22" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(24,38,56,0.97)_0%,rgba(21,32,47,0.91)_34%,rgba(10,24,39,0.72)_68%,rgba(6,17,29,0.78)_100%)]" />
 
       <div className="relative z-10 mx-auto flex min-h-[760px] w-full max-w-[1501px] items-center px-6 py-20 sm:min-h-[820px] sm:px-10 lg:px-14 lg:py-24">
         <Reveal className="mx-auto w-full max-w-[1080px] text-center text-white">

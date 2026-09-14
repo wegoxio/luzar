@@ -58,19 +58,28 @@ export function TimelineSection() {
                 className={styles.item}
               >
                 <div
-                  className={`${styles.card} relative aspect-[412/495] overflow-hidden rounded-[4px] bg-[#d8dde1]`}
+                  className={`${styles.card} relative aspect-[306/480] overflow-hidden rounded-[4px] bg-[#d8dde1]`}
                 >
+                  <Image
+                    src={item.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 767px) calc(100vw - 48px), 382px"
+                    className="scale-110 object-cover grayscale blur-xl"
+                    aria-hidden="true"
+                  />
+                  <div className="absolute inset-0 bg-black/8" />
                   <Image
                     src={item.image}
                     alt={item.imageAlt}
                     fill
-                    sizes="(max-width: 767px) calc(100vw - 48px), 31vw"
-                    className="object-cover grayscale"
+                    sizes="(max-width: 767px) calc(100vw - 48px), 382px"
+                    className="object-contain grayscale"
                   />
                 </div>
 
                 <article
-                  className={`${styles.card} flex aspect-[412/495] flex-col rounded-[4px] bg-[linear-gradient(145deg,#08639a_0%,#00558f_48%,#002c50_100%)] px-8 py-9 text-white max-sm:aspect-auto max-sm:min-h-[460px] sm:px-10 sm:py-11 lg:px-12 lg:py-12`}
+                  className={`${styles.card} flex aspect-[306/480] flex-col rounded-[4px] bg-[linear-gradient(145deg,#08639a_0%,#00558f_48%,#002c50_100%)] px-8 py-9 text-white max-sm:aspect-auto max-sm:min-h-[460px] sm:px-10 sm:py-11 lg:px-12 lg:py-12`}
                   aria-current={index === activeIndex ? "step" : undefined}
                 >
                   <p className="text-[clamp(4rem,7vw,6.2rem)] font-light leading-none tracking-[-0.05em]">

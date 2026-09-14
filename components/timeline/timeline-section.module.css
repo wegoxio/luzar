@@ -1,6 +1,6 @@
 .viewport {
   --gap: 14px;
-  --card-width: min(31vw, 472px);
+  --card-width: min(27vw, 382px);
   overflow: hidden;
 }
 
