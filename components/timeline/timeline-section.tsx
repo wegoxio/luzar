@@ -74,7 +74,7 @@ export function TimelineSection() {
                     alt={item.imageAlt}
                     fill
                     sizes="(max-width: 767px) calc(100vw - 48px), 382px"
-                    className="object-contain grayscale"
+                    className="object-contain"
                   />
                 </div>
 

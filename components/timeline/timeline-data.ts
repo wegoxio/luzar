@@ -13,7 +13,7 @@ export type TimelineItem = {
 export const TIMELINE_ITEMS: TimelineItem[] = [
   {
     year: "2009",
-    image: "/timeline/timeline-01.png",
+    image: "/timeline/timeline-2009.png",
     imageAlt: "Edificios corporativos vistos desde abajo",
     title: "Nace Luzar",
     description:
@@ -21,7 +21,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2010",
-    image: "/timeline/timeline-02.png",
+    image: "/timeline/timeline-2010.png",
     imageAlt: "Puerto de embarcaciones",
     title: "Primer embarque a Venezuela",
     description:
@@ -29,7 +29,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2012",
-    image: "/timeline/timeline-03.png",
+    image: "/timeline/timeline-2012.png",
     imageAlt: "Buques cargueros en el puerto de salida",
     title: "Expansión a Perú y Bolivia",
     description:
@@ -37,7 +37,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2013",
-    image: "/timeline/timeline-04.png",
+    image: "/timeline/timeline-2013.png",
     imageAlt: "Buque carguero rumbo a su destino",
     title: "Llegada a Ecuador y Miami",
     description:
@@ -45,7 +45,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2014",
-    image: "/timeline/timeline-05.png",
+    image: "/timeline/timeline-2014.png",
     imageAlt: "Campo agrícola",
     title: "Entrada al mercado colombiano",
     description:
@@ -53,7 +53,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2015",
-    image: "/timeline/timeline-06.png",
+    image: "/timeline/timeline-2015.png",
     imageAlt: "Puerto carguero",
     title: "Enfoque en commodities agrícolas",
     description:
@@ -61,7 +61,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2017",
-    image: "/timeline/timeline-07.png",
+    image: "/timeline/timeline-2017.png",
     imageAlt: "Billetera Visa",
     title: "Expansión a República Dominicana",
     description:
@@ -69,7 +69,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2018",
-    image: "/timeline/timeline-08.png",
+    image: "/timeline/timeline-2018.png",
     imageAlt: "Poblado Urbano",
     title: "Nace Sagitta Marine",
     description:
@@ -77,7 +77,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2019",
-    image: "/timeline/timeline-09.png",
+    image: "/timeline/timeline-2019.png",
     imageAlt: "Buque en el medio del mar transportando commodities",
     title: "Consolidación de Sagitta Marine",
     description:
@@ -85,7 +85,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2020",
-    image: "/timeline/timeline-10.png",
+    image: "/timeline/timeline-2020.png",
     imageAlt: "Buque carguero visto desde atrás",
     title: "Crecimiento récord de operaciones",
     description:
@@ -93,7 +93,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2021",
-    image: "/timeline/timeline-11.png",
+    image: "/timeline/timeline-2021.png",
     imageAlt: "Puerto carguero",
     title: "Nuevas operaciones y productos",
     description:
@@ -101,7 +101,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2022",
-    image: "/timeline/timeline-12.png",
+    image: "/timeline/timeline-2022.png",
     imageAlt: "Planta de producción",
     title: "Expansión logística y exportadora",
     description:
@@ -109,7 +109,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2023",
-    image: "/timeline/timeline-13.png",
+    image: "/timeline/timeline-2023.png",
     imageAlt: "Campo agrícola",
     title: "Compromiso con la sostenibilidad",
     description:
@@ -117,7 +117,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2024",
-    image: "/timeline/timeline-14.png",
+    image: "/timeline/timeline-2024.png",
     imageAlt: "Bosque de árboles",
     title: "Récord de volumen y nuevo producto",
     description:
@@ -125,7 +125,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "2025",
-    image: "/timeline/timeline-15.png",
+    image: "/timeline/timeline-2025.png",
     imageAlt: "Campo agrícola",
     title: "Diversificación del portafolio",
     description:

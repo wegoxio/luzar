@@ -21,13 +21,13 @@ const HERO_SLIDES = [
       "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
   },
   {
-    image: "/hero/hero-3.webp",
+    image: "/hero/hero-3.png",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
       "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
   },
   {
-    image: "/hero/hero-4.webp",
+    image: "/hero/hero-4.png",
     title: ["Donde nacen las", "conexiones que", "mueven mercados"],
     description:
       "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
