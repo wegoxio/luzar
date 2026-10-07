@@ -43,15 +43,11 @@ export function PresenceSection() {
     >
       <div className="mx-auto w-full max-w-[1501px] px-4 sm:px-8 lg:px-12">
         <Reveal className="mx-auto max-w-[920px] text-center">
-          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.34em] text-[#A1AAB9]">
-            ALCANCE REGIONAL
-          </p>
           <h2 className="mt-5 text-[clamp(2.4rem,4vw,4rem)] font-light leading-[1.08] tracking-[-0.01em] text-[#1A263A]">
-            Presencia global
+            Oficinas principales
           </h2>
           <p className="mx-auto mt-7 max-w-[860px] text-[clamp(0.98rem,1.03vw,1.12rem)] leading-[1.6] text-[#9099A9]">
-            Actualmente nuestros destinos principales son Venezuela, Colombia,
-            Ecuador y Panamá
+            OFICINAS
           </p>
         </Reveal>
 

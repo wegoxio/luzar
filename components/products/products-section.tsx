@@ -175,7 +175,7 @@ export function ProductsSection() {
                       alt=""
                       fill
                       sizes="(min-width: 1024px) 10vw, 25vw"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-contain p-1.5 transition-transform duration-300 group-hover:scale-[1.02]"
                     />
                   </span>
                   <span className="mt-2 block truncate text-[0.57rem] font-medium uppercase tracking-[-0.01em]">

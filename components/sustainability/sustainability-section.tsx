@@ -4,22 +4,22 @@ import { Reveal } from "../ui/reveal";
 
 const PILLARS = [
   {
-    image: "/responsabilty/responsabilty-02.png",
+    image: "/sustainability/commitment.png",
     title: "Compromiso",
     description: "Ética y transparencia en cada operación",
   },
   {
-    image: "/responsabilty/responsabilty-03.png",
+    image: "/sustainability/supply-chain.png",
     title: "Cadena de suministro",
     description: "Prácticas responsables y trazabilidad",
   },
   {
-    image: "/responsabilty/responsabilty-01.png",
+    image: "/sustainability/co2.png",
     title: "CO₂",
     description: "Reducción de huella de carbono",
   },
   {
-    image: "/responsabilty/responsabilty-04.png",
+    image: "/sustainability/community.png",
     title: "Comunidad",
     description: "Apoyo al desarrollo local",
   },
