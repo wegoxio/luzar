@@ -1,6 +1,6 @@
 .viewport {
   --gap: 14px;
-  --card-width: min(27vw, 382px);
+  --card-width: min(27vw, 306px);
   overflow: hidden;
 }
 
@@ -11,17 +11,19 @@
 
 .item {
   display: flex;
+  align-items: flex-start;
   flex: 0 0 calc(var(--card-width) + var(--card-width) + var(--gap));
   gap: var(--gap);
 }
 
 .card {
   flex: 0 0 var(--card-width);
+  height: calc(var(--card-width) * 480 / 306);
 }
 
 @media (max-width: 767px) {
   .viewport {
-    --card-width: calc(100vw - 48px);
+    --card-width: min(calc(100vw - 48px), 306px);
   }
 
   .item {

@@ -58,38 +58,43 @@ export function TimelineSection() {
                 className={styles.item}
               >
                 <div
-                  className={`${styles.card} relative aspect-[306/480] overflow-hidden rounded-[4px] bg-[#d8dde1]`}
+                  className={`${styles.card} relative aspect-[306/480] overflow-hidden rounded-[4px] ${item.imageType === "logo" ? "bg-white" : "bg-[#d8dde1]"}`}
                 >
-                  <Image
-                    src={item.image}
-                    alt=""
-                    fill
-                    sizes="(max-width: 767px) calc(100vw - 48px), 382px"
-                    className="scale-110 object-cover grayscale blur-xl"
-                    aria-hidden="true"
-                  />
-                  <div className="absolute inset-0 bg-black/8" />
+                  {item.imageType !== "logo" ? (
+                    <>
+                      <Image
+                        src={item.image}
+                        alt=""
+                        fill
+                        sizes="(max-width: 767px) min(calc(100vw - 48px), 306px), 306px"
+                        className="scale-110 object-cover grayscale blur-xl"
+                        aria-hidden="true"
+                      />
+                      <div className="absolute inset-0 bg-black/8" />
+                    </>
+                  ) : null}
                   <Image
                     src={item.image}
                     alt={item.imageAlt}
                     fill
-                    sizes="(max-width: 767px) calc(100vw - 48px), 382px"
+                    unoptimized
+                    sizes="(max-width: 767px) min(calc(100vw - 48px), 306px), 306px"
                     className="object-contain"
                   />
                 </div>
 
                 <article
-                  className={`${styles.card} flex aspect-[306/480] flex-col rounded-[4px] bg-[linear-gradient(145deg,#08639a_0%,#00558f_48%,#002c50_100%)] px-8 py-9 text-white max-sm:aspect-auto max-sm:min-h-[460px] sm:px-10 sm:py-11 lg:px-12 lg:py-12`}
+                  className={`${styles.card} flex flex-col overflow-hidden rounded-[4px] bg-[linear-gradient(145deg,#08639a_0%,#00558f_48%,#002c50_100%)] px-7 py-8 text-white sm:px-8 sm:py-9`}
                   aria-current={index === activeIndex ? "step" : undefined}
                 >
-                  <p className="text-[clamp(4rem,7vw,6.2rem)] font-light leading-none tracking-[-0.05em]">
+                  <p className="text-[clamp(3.4rem,5vw,4.6rem)] font-light leading-none tracking-[-0.05em]">
                     {item.year}
                   </p>
-                  <h3 className="mt-8 text-[clamp(1.35rem,2vw,2rem)] font-light leading-tight">
+                  <h3 className="mt-6 text-[clamp(1.25rem,1.6vw,1.55rem)] font-light leading-tight">
                     {item.title}
                   </h3>
                   {item.description ? (
-                    <p className="mt-6 max-w-[390px] text-sm font-light leading-7 text-white/65 lg:text-base">
+                    <p className="mt-5 text-sm font-light leading-6 text-white/65">
                       {item.description}
                     </p>
                   ) : null}

@@ -80,7 +80,7 @@ export function PresenceSection() {
 
         <Reveal className="mt-14 text-center lg:mt-16">
           <h3 className="text-[0.72rem] font-semibold uppercase tracking-[0.25em] text-[#9AA5B6]">
-            Destinos de entrega
+            Dónde operamos
           </h3>
         </Reveal>
 

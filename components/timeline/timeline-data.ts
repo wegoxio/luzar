@@ -2,6 +2,7 @@ export type TimelineItem = {
   year: string;
   image: string;
   imageAlt: string;
+  imageType?: "photo" | "logo";
   title: string;
   description: string;
 };
@@ -25,7 +26,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     imageAlt: "Puerto de embarcaciones",
     title: "Primer embarque a Venezuela",
     description:
-      "Ejecutamos nuestro primer embarque hacia Venezuela: 10.000 TM de harina de soya a bordo del buque MV Nataly Volten.",
+      "Ejecutamos nuestro primer embarque hacia Venezuela: 10.000 TM de harina de soya a bordo del buque MV Natalie Bolten.",
   },
   {
     year: "2012",
@@ -70,7 +71,8 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   {
     year: "2018",
     image: "/timeline/timeline-2018.png",
-    imageAlt: "Poblado Urbano",
+    imageAlt: "Logo de Sagitta Marine",
+    imageType: "logo",
     title: "Nace Sagitta Marine",
     description:
       "Iniciamos Sagitta Marine como nuestra división interna de contratación y gestión de fletes marítimos.",
