@@ -2,37 +2,18 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { HeroProgress } from "./hero-progress";
 import { Reveal } from "../ui/reveal";
+import { HeroProgress } from "./hero-progress";
 
 const SLIDE_DURATION_MS = 6000;
 
 const HERO_SLIDES = [
-  {
-    image: "/hero/hero-1.webp",
-    title: ["Donde nacen las", "conexiones que", "mueven mercados"],
-    description:
-      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
-  },
-  {
-    image: "/hero/hero-2.webp",
-    title: ["Donde nacen las", "conexiones que", "mueven mercados"],
-    description:
-      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
-  },
-  {
-    image: "/hero/hero-3.png",
-    title: ["Donde nacen las", "conexiones que", "mueven mercados"],
-    description:
-      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
-  },
-  {
-    image: "/hero/hero-4.png",
-    title: ["Donde nacen las", "conexiones que", "mueven mercados"],
-    description:
-      "Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.",
-  },
-];
+  { type: "video", src: "/video-hero.mp4" },
+  { type: "image", src: "/hero/hero-1.webp" },
+  { type: "image", src: "/hero/hero-2.webp" },
+  { type: "image", src: "/hero/hero-3.png" },
+  { type: "image", src: "/hero/hero-4.png" },
+] as const;
 
 export function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -57,10 +38,7 @@ export function HeroSection() {
     };
 
     rafId = window.requestAnimationFrame(animateProgress);
-
-    return () => {
-      window.cancelAnimationFrame(rafId);
-    };
+    return () => window.cancelAnimationFrame(rafId);
   }, [activeSlide]);
 
   const handleSelectSlide = (nextSlide: number) => {
@@ -68,26 +46,33 @@ export function HeroSection() {
     setActiveSlide(nextSlide);
   };
 
-  const currentSlide = HERO_SLIDES[activeSlide];
-
   return (
-    <section
-      id="nosotros"
-      className="relative h-dvh scroll-mt-28 overflow-hidden border border-[#1f98df] bg-slate-900"
-    >
+    <section id="nosotros" className="relative h-dvh scroll-mt-28 overflow-hidden border border-[#1f98df] bg-slate-900">
       <div className="absolute inset-0">
         {HERO_SLIDES.map((slide, index) => (
-          <Image
-            key={slide.image}
-            src={slide.image}
-            alt="Vista logística de contenedores en puerto"
-            fill
-            priority={index === 0}
-            sizes="100vw"
-            className={`pointer-events-none object-cover object-center brightness-[1.03] contrast-[1.04] transition-opacity duration-700 ease-in-out will-change-opacity ${
-              index === activeSlide ? "opacity-100" : "opacity-0"
-            }`}
-          />
+          slide.type === "video" ? (
+            <video
+              key={slide.src}
+              src={slide.src}
+              autoPlay={index === activeSlide}
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-hidden="true"
+              className={`pointer-events-none absolute inset-0 h-full w-full object-cover object-center brightness-[1.03] contrast-[1.04] transition-opacity duration-700 ease-in-out ${index === activeSlide ? "opacity-100" : "opacity-0"}`}
+            />
+          ) : (
+            <Image
+              key={slide.src}
+              src={slide.src}
+              alt="Vista logística de contenedores en puerto"
+              fill
+              priority={index === 1}
+              sizes="100vw"
+              className={`pointer-events-none object-cover object-center brightness-[1.03] contrast-[1.04] transition-opacity duration-700 ease-in-out ${index === activeSlide ? "opacity-100" : "opacity-0"}`}
+            />
+          )
         ))}
       </div>
 
@@ -97,25 +82,15 @@ export function HeroSection() {
       <div className="relative z-10 flex h-full flex-col px-7 pb-6 pt-24 sm:px-10 sm:pt-28 lg:px-12 lg:pt-32">
         <Reveal className="my-auto max-w-202 pb-16 lg:pb-20" delayMs={80}>
           <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-bold leading-[clamp(3.1rem,6.25vw,5.625rem)] tracking-[-0.01em] text-white">
-            {currentSlide.title.map((line) => (
-              <span key={line} className="block">
-                {line}
-              </span>
-            ))}
+            {["Donde nacen las", "conexiones que", "mueven mercados"].map((line) => <span key={line} className="block">{line}</span>)}
           </h1>
-
           <p className="mt-6 max-w-202 text-[clamp(1.1rem,1.45vw,1.5rem)] leading-[1.35] text-white/90">
-            {currentSlide.description}
+            Somos un comerciante global de materias primas, enfocado en productos para alimentación animal y consumo humano.
           </p>
         </Reveal>
 
         <Reveal delayMs={180}>
-          <HeroProgress
-            activeIndex={activeSlide}
-            activeProgress={progress}
-            total={HERO_SLIDES.length}
-            onSelect={handleSelectSlide}
-          />
+          <HeroProgress activeIndex={activeSlide} activeProgress={progress} total={HERO_SLIDES.length} onSelect={handleSelectSlide} />
         </Reveal>
       </div>
     </section>
