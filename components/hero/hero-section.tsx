@@ -9,9 +9,7 @@ const SLIDE_DURATION_MS = 6000;
 
 const HERO_SLIDES = [
   { type: "video", src: "/video-hero.mp4" },
-  { type: "image", src: "/hero/hero-1.webp" },
   { type: "image", src: "/hero/hero-2.webp" },
-  { type: "image", src: "/hero/hero-3.png" },
   { type: "image", src: "/hero/hero-4.png" },
 ] as const;
 

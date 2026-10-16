@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { Reveal } from "../ui/reveal";
 
 const PILLARS = [
@@ -48,10 +47,6 @@ export function SustainabilitySection() {
                 criterios: el impacto para la sociedad y el medio ambiente; y la visión de
                 largo plazo de los líderes para mantener su negocio en el tiempo.
               </p>
-
-              <p className="mt-7 font-normal text-[#172238]">
-                Hoy en día seguimos <strong className="font-bold">4 ejes clave...</strong>
-              </p>
             </div>
           </div>
         </Reveal>
@@ -64,6 +59,7 @@ export function SustainabilitySection() {
                   src={pillar.image}
                   alt={pillar.title}
                   fill
+                  quality={100}
                   sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 22vw"
                   className="object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
                 />
@@ -80,9 +76,6 @@ export function SustainabilitySection() {
                     </p>
                   </div>
 
-                  <span className="mt-5 inline-flex size-10 items-center justify-center rounded-full border border-white/55 bg-white/10 transition-all duration-500 group-hover:translate-x-1 group-hover:border-white group-hover:bg-white group-hover:text-[#012c64]">
-                    <ArrowRight size={23} strokeWidth={1.7} />
-                  </span>
                 </div>
               </article>
             </Reveal>
